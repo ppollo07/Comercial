@@ -12,11 +12,11 @@ $(document).ready(function() {
     $('#tiraGris').css({top:0, left:0, width:RowPri.left+MenuPri, height:Hwindows});
   });
 
-  $('.menuP > li').on('click', function() {
-    $('.menuP > li').each(function(index, el) {
-      $(this).attr({class: ''});
+  $('.menuP > li.principal').on('click', function() {
+    $('.menuP > li.principal').each(function(index, el) {
+      $(this).attr({class: 'principal'});
     });
-    $(this).attr({class: 'active'});
+    $(this).attr({class: 'principal active'});
   });
 
   if($("form#form-signin")){

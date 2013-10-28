@@ -123,10 +123,10 @@ code {
 ul.menuP > li{
   background-color: #f0f0f0;
   border-bottom: #d1d1d1 1px solid;
-  margin-top: 0px
+  margin-top: 0px;
 }
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
-  background-color: #bcbcbc;
+  background-color: #515151;
   color: #FFFFFF;
 }
 .nav-pills > li > a {
@@ -144,6 +144,37 @@ ul.menuP > li{
 }
 ul.menuP > li img{
   margin-right: 10px;
+}
+ul.menuP > li > ul.sub {
+  margin: 0px;
+}
+ul.menuP > li > ul.sub > li {
+  background-color: #939393;
+  border-bottom: none;
+  margin-top: 0px;
+  border-radius: 0;
+  color: #FFF;
+}
+ul.menuP > li > ul.sub > li > a {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500; 
+  color: #FFF;
+}
+ul.menuP > li > ul.sub > li > a:hover {
+  background-color: #6b6b6b;
+  border-bottom: none;
+  margin-top: 0px;
+  border-radius: 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500; 
+  color: #FFF;
+}
+ul.menuP > li > ul.sub > li.sub {
+  background-color: #939393;
+  border-bottom: none;
+  margin-top: 0px;
+  border-radius: 0;
+  color: #FFF;
 }
 .row{
   margin-left: 0px;
