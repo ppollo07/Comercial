@@ -1,5 +1,6 @@
 /* Sticky footer styles
 -------------------------------------------------- */
+*{font-family: 'Ubuntu', sans-serif;}
 html,
 body {
   height: 100%;
@@ -8,9 +9,15 @@ body {
 .container{
   padding: 0;
 }
-.row [class^="col-"] {
+/*.row [class^="col-"] {
   padding: 0;
-  /*margin: 0;*/
+  margin: 0;
+}*/
+/*.row-xs {
+  padding: 0px 15px;
+}*/
+.sin-m{
+  padding: 0px;
 }
 
 /* Small devices (tablets, 480px and up) */
@@ -18,6 +25,9 @@ body {
   .amplia-mas{
     right: 5px !important;
     bottom: 5px !important;
+  }
+  .btn_xs{
+    width: 100%;
   }
   /*body{background: url('../img/bg_webS.jpg') repeat-y left;}*/
 }
@@ -213,4 +223,26 @@ ul.lista > li{
   color: #FFF;
   font-size: 12px;
   font-family: 'Ubuntu', sans-serif;
+}
+.formulario_clientes, .form-horizontal{
+  margin: 15px 0;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+.titulo_seccion{
+  border-bottom: 1px solid #7f7f7f;
+}
+.titulo_seccion h2{
+  padding-left: 10px;
+  color: #009fd7;
+  font-size: 17px;
+  font-family: 'Ubuntu', sans-serif; 
+}
+.form-horizontal .form-group{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.form-horizontal .control-label{
+  text-align: left;
 }
