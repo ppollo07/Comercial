@@ -21,6 +21,16 @@ body {
 }
 
 /* Small devices (tablets, 480px and up) */
+@media (max-width: 479px) {
+  .amplia-mas{
+    right: 5px !important;
+    bottom: 5px !important;
+  }
+  .btn_xs{
+    width: 100%;
+  }
+  /*body{background: url('../img/bg_webS.jpg') repeat-y left;}*/
+}
 @media (min-width: 480px) {
   .amplia-mas{
     right: 5px !important;
@@ -35,6 +45,9 @@ body {
 @media (min-width: 768px) and (max-width: 767px) {
   .amplia-mas{
     font-size: 24px;
+  }
+  .btn_xs{
+    width: 100%;
   }
   /*body{background: url('../img/bg_webS.jpg') repeat-y left;}*/
 }
@@ -112,7 +125,7 @@ code {
   margin-left: 0px;
   margin-right: 0px;
 }
-.line-btn .col-lg-12{
+.line-btn .col-lg-12, .line-btn .col-md-12, .line-btn .col-sm-12, .line-btn .col-xs-12{
   height: 82px;
   background-color: #f6f6f8;
   padding-left: 0px;
@@ -244,5 +257,14 @@ ul.lista > li{
   margin-right: 0px;
 }
 .form-horizontal .control-label{
-  text-align: left;
+  text-align: left !important;
+}
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.borde_btns{
+  border-left: 1px solid #F0F0F0;
+  border-right: 1px solid #F0F0F0;
 }
