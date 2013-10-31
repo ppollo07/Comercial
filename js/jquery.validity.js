@@ -1112,7 +1112,7 @@ __private = {
 
         raise:function($obj, msg) {
             var pos = $obj.offset();
-            pos.left += $obj.width() - 130;
+            pos.left += $obj.width() - 150;
             pos.top -= 20;
             
             var tooltip = $(

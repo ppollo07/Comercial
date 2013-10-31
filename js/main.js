@@ -19,12 +19,34 @@ $(document).ready(function() {
     $(this).attr({class: 'principal active'});
   });
 
+  $('#habilitado-switch').bootstrapSwitch('setSizeClass', '');
+  $('.selectpicker').selectpicker({'selectedText': 'cat'});
+  $('.datepicker').datepicker({format: 'dd-mm-yyyy'})
+
   if($("form#form-signin")){
     $(function() {
             //$.validity.setup({ outputMode:"modal"});
             $("form#form-signin").validity(function() {
               $('#usuario').require();
               $('#password').require();
+              var result = $.validity.end();
+              console.log(result.valid);    
+              if (result.valid == true) {
+                    //Envia_form();
+                    return false
+                  }else{
+
+                  };
+                });
+          });     
+  }
+
+  if($("form#form-nuevo-cliente")){
+    $(function() {
+            //$.validity.setup({ outputMode:"modal"});
+            $("form#form-nuevo-cliente").validity(function() {
+              $('#nombre').require();
+              $('#apellido').require();
               var result = $.validity.end();
               console.log(result.valid);    
               if (result.valid == true) {
