@@ -100,44 +100,91 @@
         <div class="col-lg-9 col-md-9 col-sm-9 sin-m">
           <div class="row row-xs">
             <div class="titulo_seccion">
-              <h2>Nuevo Cliente</h2>
+              <h2>Listado de Clientes</h2>
             </div>
-            <form class="form-horizontal" role="form" id="form-nuevo-cliente" onsubmit="return false">
+            <form class="form-horizontal" role="form" id="form-listado-cliente" onsubmit="return false">
               <div class="row">
+
                 <div class="row">
-                  <div class="col-lg-offset-10 col-md-offset-9 col-sm-offset-9 col-lg-2 col-md-3 col-sm-3">
+                  <div class="col-lg-3 col-md-3 col-sm-3">
                     <div class="form-group">
-                      <label for="habilitado-switch" class="control-label">Habilitado</label>
-                      <div class="make-switch" id="habilitado-switch" data-on-label="SI" data-off-label="NO">
-                        <input type="checkbox" checked>
+                      <label for="cliente" class="col-lg-12 col-md-12 col-sm-12 control-label">Cliente</label>
+                      <input type="text" class="form-control" id="cliente" name="cliente" placeholder="Cliente">
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-3 col-sm-3">
+                    <div class="form-group">
+                      <label for="dni" class="col-lg-12 col-md-12 col-sm-12 control-label">DNI</label>
+                      <input type="text" class="form-control" id="dni" name="dni" placeholder="DNI">
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-3 col-sm-3 bfh-datepicker">
+                    <div class="form-group">
+                      <label for="fechaIni" class="col-lg-12 col-md-12 col-sm-12 control-label">Fecha inicio</label>
+                      <div class="form-group input-group bfh-datepicker-toggle" data-toggle="bfh-datepicker">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                        <input type="text" class="form-control" id="fechaIni" name="fechaIni">
+                      </div>
+                      <div class="bfh-datepicker-calendar">
+                        <table class="calendar table table-bordered">
+                          <thead>
+                            <tr class="months-header">
+                              <th class="month" colspan="4">
+                                <a class="previous" href="#"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                                <span></span>
+                                <a class="next" href="#"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                              </th>
+                              <th class="year" colspan="3">
+                                <a class="previous" href="#"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                                <span></span>
+                                <a class="next" href="#"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                              </th>
+                            </tr>
+                            <tr class="days-header">
+                            </tr>
+                          </thead>
+                          <tbody>
+                          </tbody>
+                        </table>
                       </div>
                     </div>
                   </div>
-                </div>
 
-                <div class="row">
-                  <div class="col-lg-6 col-md-6 col-sm-6">
+                  <div class="col-lg-3 col-md-3 col-sm-3 bfh-datepicker">
                     <div class="form-group">
-                      <label for="nombre" class="col-lg-12 col-md-12 col-sm-12 control-label">Nombre</label>
-                      <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                      <label for="fechaFin" class="col-lg-12 col-md-12 col-sm-12 control-label">Fecha fin</label>
+                      <div class="form-group input-group bfh-datepicker-toggle" data-toggle="bfh-datepicker">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                        <input type="text" class="form-control" id="fechaFin" name="fechaFin">
+                      </div>
+                      <div class="bfh-datepicker-calendar">
+                        <table class="calendar table table-bordered">
+                          <thead>
+                            <tr class="months-header">
+                              <th class="month" colspan="4">
+                                <a class="previous" href="#"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                                <span></span>
+                                <a class="next" href="#"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                              </th>
+                              <th class="year" colspan="3">
+                                <a class="previous" href="#"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                                <span></span>
+                                <a class="next" href="#"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                              </th>
+                            </tr>
+                            <tr class="days-header">
+                            </tr>
+                          </thead>
+                          <tbody>
+                          </tbody>
+                        </table>
+                      </div>
                     </div>
                   </div>
 
-                  <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="form-group">
-                      <label for="apellido" class="col-lg-12 col-md-12 col-sm-12 control-label">Apellido</label>
-                      <input type="text" class="form-control" id="apellido" placeholder="Apellido">
-                    </div>
-                  </div>
-
-                  <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="form-group">
-                      <label for="dni" class="col-lg-12 col-md-12 col-sm-12 control-label">DNI</label>
-                      <input type="text" class="form-control" id="dni" placeholder="DNI">
-                    </div>
-                  </div>
-
-                  <div class="col-lg-6 col-md-6 col-sm-6">
+                  <div class="col-lg-3 col-md-3 col-sm-3">
                     <div class="form-group">
                       <label for="sexo" class="col-lg-12 col-md-12 col-sm-12 control-label">Sexo</label>
                       <select id="sexo" class="selectpicker form-control" data-live-search="false">
@@ -181,108 +228,9 @@
                       </div>
                     </div>
                   </div>
-
-                  <div class="col-lg-6 col-md-6 col-sm-6 bfh-datepicker">
-                    <div class="form-group">
-                      <label for="fechaNac" class="col-lg-12 col-md-12 col-sm-12 control-label">Fecha de nacimiento</label>
-                      <div class="form-group input-group bfh-datepicker-toggle" data-toggle="bfh-datepicker">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-                        <input type="text" class="form-control">
-                      </div>
-                      <div class="bfh-datepicker-calendar">
-                        <table class="calendar table table-bordered">
-                          <thead>
-                            <tr class="months-header">
-                              <th class="month" colspan="4">
-                                <a class="previous" href="#"><i class="glyphicon glyphicon-chevron-left"></i></a>
-                                <span></span>
-                                <a class="next" href="#"><i class="glyphicon glyphicon-chevron-right"></i></a>
-                              </th>
-                              <th class="year" colspan="3">
-                                <a class="previous" href="#"><i class="glyphicon glyphicon-chevron-left"></i></a>
-                                <span></span>
-                                <a class="next" href="#"><i class="glyphicon glyphicon-chevron-right"></i></a>
-                              </th>
-                            </tr>
-                            <tr class="days-header">
-                            </tr>
-                          </thead>
-                          <tbody>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
                   
                 </div>
 
-                <div class="row">
-                  <div class="col-lg-12 col-md-12 col-sm-12">
-                    <div class="panel-group form-group" id="accordion">
-                      <div class="panel panel-default">
-                        <div class="panel-heading">
-                          <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#perfil">
-                              Perfiles
-                            </a>
-                          </h4>
-                        </div>
-                        <div id="perfil" class="panel-collapse collapse">
-                          <div class="panel-body">
-                            <div class="form-group">
-                              <div class="col-lg-12">
-                                <label class="checkbox">
-                                  <input type="checkbox" id="checkboxEnLinea1" value="opcion_1"> 1
-                                </label>
-                                <label class="checkbox">
-                                  <input type="checkbox" id="checkboxEnLinea2" value="opcion_2"> 2
-                                </label>
-                                <label class="checkbox">
-                                  <input type="checkbox" id="checkboxEnLinea3" value="opcion_3"> 3
-                                </label>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="panel panel-default">
-                        <div class="panel-heading">
-                          <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#preferencia">
-                              Preferencias
-                            </a>
-                          </h4>
-                        </div>
-                        <div id="preferencia" class="panel-collapse collapse">
-                          <div class="panel-body">
-                            <div class="form-group">
-                              <div class="col-lg-12">
-                                <label class="checkbox">
-                                  <input type="checkbox" id="checkboxEnLinea1" value="opcion_1"> 1
-                                </label>
-                                <label class="checkbox">
-                                  <input type="checkbox" id="checkboxEnLinea2" value="opcion_2"> 2
-                                </label>
-                                <label class="checkbox">
-                                  <input type="checkbox" id="checkboxEnLinea3" value="opcion_3"> 3
-                                </label>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-lg-12 col-md-12 col-sm-12">
-                    <div class="form-group">
-                      <label for="observaciones" class="col-lg-12 col-md-12 col-sm-12 control-label">Observaciones</label>
-                      <textarea class="form-control"  id="movil" observaciones="Observaciones" rows="5"></textarea>
-                    </div>
-                  </div>
-                </div>
               </div>
 
               <div class="row">

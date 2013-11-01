@@ -1,0 +1,278 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+*{font-family: 'Ubuntu', sans-serif;}
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+.container{
+  padding: 0;
+}
+/*.row [class^="col-"] {
+  padding: 0;
+  margin: 0;
+}*/
+/*.row-xs {
+  padding: 0px 15px;
+}*/
+.sin-m{
+  padding: 0px;
+}
+
+/* Small devices (tablets, 480px and up) */
+@media (max-width: 479px) {
+  .amplia-mas{
+    right: 5px !important;
+    bottom: 5px !important;
+  }
+  .btn_xs{
+    width: 100%;
+  }
+  /*body{background: url('../img/bg_webS.jpg') repeat-y left;}*/
+}
+@media (min-width: 480px) {
+  .amplia-mas{
+    right: 5px !important;
+    bottom: 5px !important;
+  }
+  .btn_xs{
+    width: 100%;
+  }
+  /*body{background: url('../img/bg_webS.jpg') repeat-y left;}*/
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 767px) {
+  .amplia-mas{
+    font-size: 24px;
+  }
+  .btn_xs{
+    width: 100%;
+  }
+  /*body{background: url('../img/bg_webS.jpg') repeat-y left;}*/
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .amplia-mas{
+    font-size: 24px;
+  }
+  /*body{background: url('../img/bg_webM.jpg') repeat-y left;}*/
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .amplia-mas{
+    font-size: 24px;
+  }
+  /*body{background: url('../img/bg_webL.jpg') repeat-y left;}*/
+}
+.btn-hidden{
+  position: relative;
+  float: left;
+  width: 25px;
+  height: 24px;
+}
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -108px;
+  /* Pad bottom by footer  height */
+  padding: 0 0 108px;
+}
+/* Set the fixed height of the footer here */
+#footer {
+  height: 108px;
+  background-color: #000000;
+}
+
+.show-grid [class^="col-"] {
+    background-color: rgba(86, 61, 124, 0.15);
+    border: 1px solid rgba(86, 61, 124, 0.2);
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+#wrap > .container {
+  
+}
+.pie {
+  float: right;
+  margin: 40px 0;
+}
+#footer > .container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+code {
+  font-size: 80%;
+}
+.navbar{
+  background-color: #009fd7;
+  height: 82px;
+}
+.navbar-nav > li > a {
+    padding-bottom: 31px;
+    padding-top: 30px;
+}
+.line-btn{
+  padding: 82px 0 0 0;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.line-btn .col-lg-12, .line-btn .col-md-12, .line-btn .col-sm-12, .line-btn .col-xs-12{
+  height: 82px;
+  background-color: #f6f6f8;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+ul.menuP > li{
+  background-color: #f0f0f0;
+  border-bottom: #d1d1d1 1px solid;
+  margin-top: 0px;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+  background-color: #515151;
+  color: #FFFFFF;
+}
+.nav-pills > li > a {
+  border-radius: 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500; 
+  color: #666666;
+}
+.nav-pills > .active > ul {
+    display: block;
+}
+.nav-pills .nav {
+    display: none;
+    margin-bottom: 8px;
+}
+ul.menuP > li img{
+  margin-right: 10px;
+}
+ul.menuP > li > ul.sub {
+  margin: 0px;
+}
+ul.menuP > li > ul.sub > li {
+  background-color: #939393;
+  border-bottom: none;
+  margin-top: 0px;
+  border-radius: 0;
+  color: #FFF;
+}
+ul.menuP > li > ul.sub > li > a {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500; 
+  color: #FFF;
+}
+ul.menuP > li > ul.sub > li > a:hover {
+  background-color: #6b6b6b;
+  border-bottom: none;
+  margin-top: 0px;
+  border-radius: 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500; 
+  color: #FFF;
+}
+ul.menuP > li > ul.sub > li.sub {
+  background-color: #939393;
+  border-bottom: none;
+  margin-top: 0px;
+  border-radius: 0;
+  color: #FFF;
+}
+.row{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#tiraGris{
+  position: absolute;
+  background-color: #f0f0f0;
+  z-index: -1;
+}
+.color-col{
+  background-color: #00bad7;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.color-col1{
+  background-color: #00c185;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.color-col2{
+  background-color: #d71200;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.icinos-esc{
+  padding-right: 5px !important;
+  padding-left: 5px !important;
+}
+.amplia-mas{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  color: #FFF;
+  display: block;
+}
+ul.lista{
+  list-style: disc;
+  list-style-position: inside;
+  padding: 12px;
+  margin: 0 0 0 12px;
+}
+ul.lista > li{
+  margin: 10px 0px;
+  color: #FFF;
+  font-size: 12px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.formulario_clientes, .form-horizontal{
+  margin: 15px 0;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+.titulo_seccion{
+  border-bottom: 1px solid #7f7f7f;
+}
+.titulo_seccion h2{
+  padding-left: 10px;
+  color: #009fd7;
+  font-size: 17px;
+  font-family: 'Ubuntu', sans-serif; 
+}
+.form-horizontal .form-group{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.form-horizontal .control-label{
+  text-align: left !important;
+}
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.borde_btns{
+  border-left: 1px solid #F0F0F0;
+  border-right: 1px solid #F0F0F0;
+}
+span.divisor{
+  line-height: 33px;
+  font-size: 16px;
+  color: #CCC;
+}
+.switch-mini{
+  font-size: 10px;
+}
