@@ -21,6 +21,13 @@ $(document).ready(function() {
 
   $('#habilitado-switch').bootstrapSwitch('setSizeClass', '');
   $('.selectpicker').selectpicker({'selectedText': 'cat'});
+  $('.input-group.date').datepicker({
+    format: "dd/mm/yy",
+    language: "es",
+    autoclose: true
+  });
+
+  /*----------Formulario logueo----------------*/
 
   if($("form#form-signin")){
     $(function() {
@@ -39,6 +46,27 @@ $(document).ready(function() {
                 });
           });     
   }
+
+  /*----------Formulario  Listado Cliente----------------*/
+
+  if($("form#form-listado-cliente")){
+    $(function() {
+            //$.validity.setup({ outputMode:"modal"});
+            $("form#form-listado-cliente").validity(function() {
+              $('#cliente').require();
+              var result = $.validity.end();
+              console.log(result.valid);    
+              if (result.valid == true) {
+                    //Envia_form();
+                    return false
+                  }else{
+
+                  };
+                });
+          });     
+  }
+
+  /*----------Formulario  Nuevo Cliente----------------*/
 
   if($("form#form-nuevo-cliente")){
     $(function() {

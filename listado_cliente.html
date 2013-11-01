@@ -18,7 +18,7 @@
   <!-- Custom styles for this template -->
   <link href='css/bootstrap-switch.css' rel='stylesheet' type='text/css'>
   <link href='css/bootstrap-select.min.css' rel='stylesheet' type='text/css'>
-  <link href='css/bootstrap-formhelpers.min.css' rel='stylesheet' type='text/css'>
+  <link href='css/bootstrap-datepicker.css' rel='stylesheet' type='text/css'>
   <link href='css/insidePage.css' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -120,125 +120,62 @@
                     </div>
                   </div>
 
-                  <div class="col-lg-3 col-md-3 col-sm-3 bfh-datepicker">
+                  <div class="col-lg-3 col-md-3 col-sm-3">
                     <div class="form-group">
                       <label for="fechaIni" class="col-lg-12 col-md-12 col-sm-12 control-label">Fecha inicio</label>
-                      <div class="form-group input-group bfh-datepicker-toggle" data-toggle="bfh-datepicker">
+                      <div class="form-group input-group date">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
                         <input type="text" class="form-control" id="fechaIni" name="fechaIni">
-                      </div>
-                      <div class="bfh-datepicker-calendar">
-                        <table class="calendar table table-bordered">
-                          <thead>
-                            <tr class="months-header">
-                              <th class="month" colspan="4">
-                                <a class="previous" href="#"><i class="glyphicon glyphicon-chevron-left"></i></a>
-                                <span></span>
-                                <a class="next" href="#"><i class="glyphicon glyphicon-chevron-right"></i></a>
-                              </th>
-                              <th class="year" colspan="3">
-                                <a class="previous" href="#"><i class="glyphicon glyphicon-chevron-left"></i></a>
-                                <span></span>
-                                <a class="next" href="#"><i class="glyphicon glyphicon-chevron-right"></i></a>
-                              </th>
-                            </tr>
-                            <tr class="days-header">
-                            </tr>
-                          </thead>
-                          <tbody>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-3 col-md-3 col-sm-3 bfh-datepicker">
-                    <div class="form-group">
-                      <label for="fechaFin" class="col-lg-12 col-md-12 col-sm-12 control-label">Fecha fin</label>
-                      <div class="form-group input-group bfh-datepicker-toggle" data-toggle="bfh-datepicker">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-                        <input type="text" class="form-control" id="fechaFin" name="fechaFin">
-                      </div>
-                      <div class="bfh-datepicker-calendar">
-                        <table class="calendar table table-bordered">
-                          <thead>
-                            <tr class="months-header">
-                              <th class="month" colspan="4">
-                                <a class="previous" href="#"><i class="glyphicon glyphicon-chevron-left"></i></a>
-                                <span></span>
-                                <a class="next" href="#"><i class="glyphicon glyphicon-chevron-right"></i></a>
-                              </th>
-                              <th class="year" colspan="3">
-                                <a class="previous" href="#"><i class="glyphicon glyphicon-chevron-left"></i></a>
-                                <span></span>
-                                <a class="next" href="#"><i class="glyphicon glyphicon-chevron-right"></i></a>
-                              </th>
-                            </tr>
-                            <tr class="days-header">
-                            </tr>
-                          </thead>
-                          <tbody>
-                          </tbody>
-                        </table>
                       </div>
                     </div>
                   </div>
 
                   <div class="col-lg-3 col-md-3 col-sm-3">
                     <div class="form-group">
-                      <label for="sexo" class="col-lg-12 col-md-12 col-sm-12 control-label">Sexo</label>
-                      <select id="sexo" class="selectpicker form-control" data-live-search="false">
-                        <option selected="selected" value="3">Seleccione</option>
-                        <option value="1">Masculino</option>
-                        <option value="0">Femenino</option>
-                      </select>
+                      <label for="fechaFin" class="col-lg-12 col-md-12 col-sm-12 control-label">Fecha fin</label>
+                      <div class="form-group input-group date">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                        <input type="text" class="form-control" id="fechaFin" name="fechaFin">
+                      </div>
                     </div>
                   </div>
 
-                  <div class="col-lg-6 col-md-6 col-sm-6">
+                  <div class="col-lg-3 col-md-3 col-sm-3">
                     <div class="form-group">
                       <label for="mail" class="col-lg-12 col-md-12 col-sm-12 control-label">E-mail</label>
                       <input type="text" class="form-control" id="mail" placeholder="E-mail">
                     </div>
                   </div>
 
-                  <div class="col-lg-6 col-md-6 col-sm-6">
+                  <div class="col-lg-3 col-md-3 col-sm-3">
                     <div class="form-group">
-                      <label for="telefono1" class="col-lg-12 col-md-12 col-sm-12 control-label">Telefono1</label>
-                      <input type="text" class="form-control" id="telefono1" placeholder="Telefono">
+                      <label for="gestion" class="col-lg-12 col-md-12 col-sm-12 control-label">Gestion</label>
+                      <select id="gestion" class="selectpicker form-control" data-live-search="false">
+                        <option selected="selected" value="3">Seleccione</option>
+                        <option value="1">Primera gestion</option>
+                        <option value="0">Segunda gestion</option>
+                      </select>
                     </div>
                   </div>
 
-                  <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="form-group">
-                      <label for="telefono2" class="col-lg-12 col-md-12 col-sm-12 control-label">Telefono2</label>
-                      <input type="text" class="form-control" id="telefono2" placeholder="Telefono2">
+                  <div class="col-lg-3 col-md-3 col-sm-3">
+                    <div class="form-group checkbox">
+                      <label for="gestion" class="col-lg-12 col-md-12 col-sm-12 control-label"></label>
+                      <label for="datopropio" class="control-label">Datos propios</label>
+                      <input type="checkbox" value="" id="datopropio">
                     </div>
                   </div>
 
-                  <div class="col-lg-6 col-md-6 col-sm-6">
+                  <div class="col-lg-3 col-md-3 col-sm-3">
                     <div class="form-group">
-                      <label for="movil" class="col-lg-12 col-md-12 col-sm-12 control-label">Movil</label>
-                      <div class="col-lg-4 col-md-4 col-sm-4 sin-m">
-                        <input type="text" class="form-control" id="pref3" placeholder="Prefijo">
-                      </div>
-                      <div class="col-lg-1 col-md-1 col-sm-1 sin-m hidden-xs text-center"><span class="divisor">-</span></div>
-                      <div class="col-lg-7 col-md-7 col-sm-7 sin-m">
-                        <input type="text" class="form-control" id="movil" placeholder="Movil">
+                      <div class="col-lg-12">
+                        <button type="submit" class="btn btn-primary btn-lg btn_xs">Guardar</button>
                       </div>
                     </div>
                   </div>
                   
                 </div>
 
-              </div>
-
-              <div class="row">
-                <div class="form-group">
-                  <div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                    <button type="submit" class="btn btn-primary btn-lg btn_xs">Guardar</button>
-                  </div>
-                </div>
               </div>
 
             </form>
@@ -263,7 +200,7 @@
   <script src="js/bootstrap-switch.min.js"></script>
   <script src="js/bootstrap-select.min.js"></script>
   <script src="js/bootstrap-datepicker.js"></script>
-  <script src="js/bootstrap-formhelpers-datepicker.es_ES.js"></script>
+  <script src="js/bootstrap-datepicker.es.js"></script>
   <!-- js Validity -->
   <script src="js/jquery.validity.js"></script>
   <!-- js principal -->

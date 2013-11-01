@@ -18,7 +18,7 @@
   <!-- Custom styles for this template -->
   <link href='css/bootstrap-switch.css' rel='stylesheet' type='text/css'>
   <link href='css/bootstrap-select.min.css' rel='stylesheet' type='text/css'>
-  <link href='css/bootstrap-formhelpers.min.css' rel='stylesheet' type='text/css'>
+  <link href='css/bootstrap-datepicker.css' rel='stylesheet' type='text/css'>
   <link href='css/insidePage.css' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -182,34 +182,12 @@
                     </div>
                   </div>
 
-                  <div class="col-lg-6 col-md-6 col-sm-6 bfh-datepicker">
+                  <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="form-group">
                       <label for="fechaNac" class="col-lg-12 col-md-12 col-sm-12 control-label">Fecha de nacimiento</label>
-                      <div class="form-group input-group bfh-datepicker-toggle" data-toggle="bfh-datepicker">
+                      <div class="form-group input-group date">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-                        <input type="text" class="form-control">
-                      </div>
-                      <div class="bfh-datepicker-calendar">
-                        <table class="calendar table table-bordered">
-                          <thead>
-                            <tr class="months-header">
-                              <th class="month" colspan="4">
-                                <a class="previous" href="#"><i class="glyphicon glyphicon-chevron-left"></i></a>
-                                <span></span>
-                                <a class="next" href="#"><i class="glyphicon glyphicon-chevron-right"></i></a>
-                              </th>
-                              <th class="year" colspan="3">
-                                <a class="previous" href="#"><i class="glyphicon glyphicon-chevron-left"></i></a>
-                                <span></span>
-                                <a class="next" href="#"><i class="glyphicon glyphicon-chevron-right"></i></a>
-                              </th>
-                            </tr>
-                            <tr class="days-header">
-                            </tr>
-                          </thead>
-                          <tbody>
-                          </tbody>
-                        </table>
+                        <input type="text" class="form-control" id="fechaNac" name="fechaNac">
                       </div>
                     </div>
                   </div>
@@ -315,7 +293,7 @@
   <script src="js/bootstrap-switch.min.js"></script>
   <script src="js/bootstrap-select.min.js"></script>
   <script src="js/bootstrap-datepicker.js"></script>
-  <script src="js/bootstrap-formhelpers-datepicker.es_ES.js"></script>
+  <script src="js/bootstrap-datepicker.es.js"></script>
   <!-- js Validity -->
   <script src="js/jquery.validity.js"></script>
   <!-- js principal -->
