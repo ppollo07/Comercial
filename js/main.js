@@ -19,13 +19,30 @@ $(document).ready(function() {
     $(this).attr({class: 'principal active'});
   });
 
-  $('#habilitado-switch').bootstrapSwitch('setSizeClass', '');
-  $('.selectpicker').selectpicker({'selectedText': 'cat'});
-  $('.input-group.date').datepicker({
-    format: "dd/mm/yy",
-    language: "es",
-    autoclose: true
-  });
+  if($('#habilitado-switch').length){
+    $('#habilitado-switch').bootstrapSwitch('setSizeClass', '');
+  };
+  
+  if($('.selectpicker').length){
+    $('.selectpicker').selectpicker({'selectedText': 'cat'});
+  };
+
+  if($('.input-group.date').length){
+    $('.input-group.date').datepicker({
+      format: "dd/mm/yy",
+      language: "es",
+      autoclose: true
+    });
+  };
+
+  if($('.checkbox-control').length){
+    $('input[type="checkbox"].checkbox-control').checkbox();
+  };
+
+  //$('.dropdown-toggle').dropdown();
+  $('.dropdown-toggle').dropdown()
+
+
 
   /*----------Formulario logueo----------------*/
 

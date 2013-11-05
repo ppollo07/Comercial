@@ -39,6 +39,12 @@ body {
   .btn_xs{
     width: 100%;
   }
+  .form-personal label{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    font-size: 12px;
+  }
   /*body{background: url('../img/bg_webS.jpg') repeat-y left;}*/
 }
 /* Small devices (tablets, 768px and up) */
@@ -57,6 +63,12 @@ body {
   .amplia-mas{
     font-size: 24px;
   }
+  .form-personal label{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    font-size: 14px;
+  }
   /*body{background: url('../img/bg_webM.jpg') repeat-y left;}*/
 }
 
@@ -64,6 +76,12 @@ body {
 @media (min-width: 1200px) {
   .amplia-mas{
     font-size: 24px;
+  }
+  .form-personal label{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    font-size: 14px;
   }
   /*body{background: url('../img/bg_webL.jpg') repeat-y left;}*/
 }
@@ -275,4 +293,44 @@ span.divisor{
 }
 .switch-mini{
   font-size: 10px;
+}
+.form-personal{
+  position: relative;
+  margin-left: 0 !important;
+  margin-top: 28px !important;
+  margin-bottom: 24px !important;
+  padding-left: 0;
+}
+.btn-buscar{
+  margin-top: 18px !important;
+  margin-bottom: 0px !important;
+}
+.nav-opciones{
+  width: 110px;
+}
+.nav-opciones:hover{
+  background-color: #F5F5F5;
+}
+.nav-opciones .dropdown-toggle{
+  padding: 0px;
+  margin: 0px;
+}
+.nav-opciones .dropdown:active{
+  background-color: #F5F5F5 !important;
+}
+.nav-opciones .dropdown.open{
+  background-color: #F5F5F5 !important;
+}
+.nav-opciones .dropdown:hover{
+  background-color: #F5F5F5 !important;
+}
+.nav-opciones .dropdown:active{
+  background-color: #F5F5F5 !important;
+}
+.nav-opciones a:hover{
+  background-color: #F5F5F5 !important;
+}
+thead.listado{
+background-color: #898989;
+color: #fff;
 }

@@ -1111,8 +1111,9 @@ __private = {
         },
 
         raise:function($obj, msg) {
+            console.log($obj.width());
             var pos = $obj.offset();
-            pos.left += $obj.width() - 150;
+            pos.right += $obj.width();
             pos.top -= 20;
             
             var tooltip = $(
